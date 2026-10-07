@@ -62,7 +62,7 @@ WEB_Dashboard/
 
 以下のリンクからアクセスできます
 
-`https://se-8a.github.io/WEB_DashBoard/`
+https://se-8a.github.io/WEB_DashBoard/
 
 ## Browser Extension
 
