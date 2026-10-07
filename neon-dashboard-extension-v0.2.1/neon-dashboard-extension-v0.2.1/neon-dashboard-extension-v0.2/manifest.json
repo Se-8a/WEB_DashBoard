@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Neon Dashboard Media Bridge",
+  "version": "0.2.0",
+  "description": "Bridge between Neon Dashboard and YouTube / YouTube Music tabs.",
+  "permissions": ["tabs"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://music.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://music.youtube.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "http://localhost/*",
+        "http://127.0.0.1/*",
+        "https://localhost/*",
+        "https://127.0.0.1/*",
+        "file:///*"
+      ],
+      "js": ["dashboard-bridge.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Neon Dashboard Media Bridge"
+  }
+}
