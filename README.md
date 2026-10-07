@@ -60,9 +60,9 @@ WEB_Dashboard/
 
 ## PC版Dashboard
 
-GitHub Pagesで公開する場合は、以下のページを使用します。
+以下のリンクからアクセスできます
 
-`https://se-8a.github.io/WEB_Dashboard/DashboardWEB_PC.html`
+`https://se-8a.github.io/WEB_DashBoard/`
 
 ## Browser Extension
 
